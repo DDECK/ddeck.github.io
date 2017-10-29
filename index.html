@@ -2,9 +2,20 @@
 <HTML>
   <HEAD>
     <TITLE>HOMEPAGE</TITLE>
+    <script type="text/javascript" 
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" 
+        src="http://www.your-domain.com/easy-comment/jquery.easy-comment.min.js"></script>
+    <script>
+    jQuery(document).ready(function(){
+       $("#my-comment").EasyComment({
+          path:"/http://ddeck.github.io/easy-comment/"
+       });
+    });
+    </script>
     <style>
       body{
-        background-color:black;
+        background-color:white;
         color:darkcyan;
         font-family:arial;
       }
@@ -13,5 +24,6 @@
   <body>
     <h1>රැදී සිටින්න</h1>
     අපගේ වෙබ් අඩවිය මේ වනවිටත් සංවර්ධනය වෙමින් පවතී. ළගදීම බලාපොරොත්තු වන්න.
+<div id="my-comment"></div>
   </body>
   </html>
