@@ -1,29 +1,26 @@
-<!DOCTYPE HTML>
-<HTML>
-  <HEAD>
-    <TITLE>HOMEPAGE</TITLE>
+<html>
+  <head>
+    <title>EasyComment Sample</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <script type="text/javascript" 
-        src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <script type="text/javascript" 
-        src="http://www.your-domain.com/easy-comment/jquery.easy-comment.min.js"></script>
-    <script>
+            src="./easy-comment/jquery.easy-comment.js"></script>
+    <script type="text/javascript">
     jQuery(document).ready(function(){
-       $("#my-comment").EasyComment({
-          path:"/easy-comment/"
-       });
+    // Your other javascript code if any
+
+    $("#id_of_your_comment_container").EasyComment({
+      path:"/easy-comment/", //Change it to the folder where you put the easycomment files
+      moderate:false,
+      maxReply:5
+    });
+    // Your other javascript code if any
     });
     </script>
-    <style>
-      body{
-        background-color:white;
-        color:darkcyan;
-        font-family:arial;
-      }
-    </style>
-   </head>
+  </head>
   <body>
-    <h1>රැදී සිටින්න</h1>
-    අපගේ වෙබ් අඩවිය මේ වනවිටත් සංවර්ධනය වෙමින් පවතී. ළගදීම බලාපොරොත්තු වන්න.
-<div id="my-comment"></div>
+    <h1>Easy-comment</h1>
+    <div id="id_of_your_comment_container" style="width:1024px;height:800px;"></div>
   </body>
-  </html>
+</html> 
